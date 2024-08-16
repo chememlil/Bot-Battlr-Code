@@ -8,7 +8,7 @@ function BotsPage() {
   const [yourBots, setYourBots] = React.useState([])
 
   React.useEffect(() => {
-    fetch("http://localhost:5000/bots")
+    fetch("http://localhost:4000/bots")
       .then((r) => r.json())
       .then((bots) => setBots(bots));
   }, []);
